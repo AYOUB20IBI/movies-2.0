@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBIMOVIES Sing Up</title>
+    <style>
+        body{
+            background-image: linear-gradient(#00000052,#000000c2),url(Here\ is\ a\ 1920\ x\ 1080\ wallpaper\ I\ made\ of\ all\ my\ favorite\ movie\ posters_\ Hope\ you\ enjoy!\ \(OC\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            margin: 50px auto;
+            width: 400px;
+            border-radius: 10px;
+            padding: 20px;
+            filter: drop-shadow(2px 4px 6px black);
+            background: #5a93c561;
+            color: #fff;
+        }
+        h2{
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button[type="submit"] {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        a{
+            color: #00e2ff;
+            text-decoration: none;
+        }
+        input{
+              border: none;
+              outline: none;
+        }
+        @media (max-width: 767px){
+            body{
+                background-image: linear-gradient(#00000052,#0000005e),url(Night\ Train\ \(2023\).jpg);
+                height: 100vh;
+            }
+            .container{
+                width: 300px;
+            }
+            input{
+              border: none;
+              outline: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="sing.html" onsubmit="return asignup()">
+          <h2>Sign Up</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="exemple(Ayoub1234)" > 
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password (AyoubIb@)">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+          <a href="sing.html">I have an account</a><br>
+          <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script>
+        window.onload=()=>{
+            let name = document.getElementById('name');
+            name.focus()
+        }
+    </script>
+
+    <script src="sing.js"></script>  
+</body>
+</html>
